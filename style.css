@@ -1,0 +1,37 @@
+
+
+body{
+    background: linear-gradient(#B7D0E1,#E1D5CB);
+}
+    
+header section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+header section img{
+    margin: 1em;
+    width: 5em;
+}
+
+header section h1{
+    margin-left: -7em;
+    margin-top: 5.9em;
+    font-size: 0.8em;
+    color: #432918;
+    
+}
+
+header p{
+    color: red;
+    margin-left: 30em;
+}
+
+header div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
