@@ -2,12 +2,14 @@ body{
     background: linear-gradient(#B7D0E1,#E1D5CB);
     overflow-x: hidden;
     width: 100vw;
+    min-height: 100vh;
     margin:0;
 }
     
 header{
-    overflow: hidden;
+
     position: relative;
+    margin-bottom: 4em;
     /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil */
 }
 
@@ -46,7 +48,6 @@ header >img:nth-of-type(2){
     width: 8em;
     top: -5em;
     right: -2em;
-    /* display: none; */
 }
 
 header >img:nth-of-type(3){
@@ -66,21 +67,54 @@ header p{
     color: #432918;
     right: 1em;
     top:6.9em;
+    /* de 'Home' kleur en plek geven */
 }
 
-header div ul {
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 1em;
     align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
     list-style: none;
 }
 
+nav ul li a{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: .2em;
+    text-decoration: none;
+    color: #E1D5CB;
+}
+nav ul li a img{
+    width: 1.5em;
+    
+}
 
-nav img{
-    width: 50%;
+nav > img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+main h2{
+    text-align: center;
+    font-size: 1em;
 }
 
 
 main p{
-    width: 100vw;
+    text-align: center;
 }
