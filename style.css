@@ -1,3 +1,21 @@
+@font-face { 
+    font-family: "cinzel";
+    src: url("fonts/cinzel/cinzel-regular.ttf");
+    /* h1 font */
+}
+
+@font-face {
+    font-family: "banana";
+    src: url("fonts/banana-super/bananasuper.otf");
+}
+
+@font-face {
+    font-family: "indie";
+    src: url("fonts/indieflower/indieflower-regular.ttf");
+}
+
+
+
 body{
     
     background: linear-gradient(#B7D0E1,#E1D5CB);
@@ -35,6 +53,7 @@ header section img{
 }
 
 header section h1{
+    font-family: "cinzel";
     margin-top: 2.5em;
     font-size: 1em;
     color: #432918;
@@ -106,13 +125,14 @@ header >img:nth-of-type(5){
 }
 
 @keyframes bewegendewolken4 {
-    0% { transform: translateX(15%); opacity: 0;}
-    50% { transform: translateX(55%); opacity: 0.5;}
-    100% { transform: translateX(15%);opacity: 0;}
+    0% { transform: translateX(15%); opacity: 0.5;}
+    50% { transform: translateX(55%); opacity: 0.2;}
+    100% { transform: translateX(15%);opacity: 0.5;}
 }
 
 
 header p{
+    font-family: "indie";
     position: absolute;
     color: #432918;
     right: 1em;
@@ -186,12 +206,14 @@ nav > img:nth-of-type(4){
 
 
 main h2{
+    font-family: "indie";
     text-align: center;
     font-size: 1em;
 }
 
 
 main p{
+    font-family: "indie";
     text-align: center;
     
 }
