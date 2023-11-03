@@ -1,7 +1,7 @@
 @font-face { 
     font-family: "cinzel";
     src: url("fonts/cinzel/cinzel-regular.ttf");
-    /* h1 font */
+   
 }
 
 @font-face {
@@ -14,7 +14,11 @@
     src: url("fonts/indieflower/indieflower-regular.ttf");
 }
 
-
+@font-face {
+    font-family: "cormorant";
+    src: url("fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
+     /* h1+p font */
+}
 
 body{
     
@@ -53,13 +57,24 @@ header section img{
 }
 
 header section h1{
-    font-family: "cinzel";
+
+    font-family: "cormorant";
     margin-top: 2.5em;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #432918;
     width: 5em;
     /* Dit heeft mijn H1 een kleur/grootte/plek */
 }
+
+header p{
+    font-family: "cinzel";
+    position: absolute;
+    color: #432918;
+    right: 0.8em;
+    top:6.9em;
+    /* de 'Home' kleur en plek geven */
+}
+
 
 header>img{
     position:absolute;
@@ -131,19 +146,11 @@ header >img:nth-of-type(5){
 }
 
 
-header p{
-    font-family: "indie";
-    position: absolute;
-    color: #432918;
-    right: 1em;
-    top:6.9em;
-    /* de 'Home' kleur en plek geven */
-}
-
 nav {
     position: fixed;
     bottom: 0;
     width: 100%;
+    
 }
 
 nav ul {
@@ -153,6 +160,7 @@ nav ul {
     gap: 1em;
     align-items: center;
     justify-content: center;
+    gap:1.3em;
 }
 
 nav ul li{
@@ -168,7 +176,7 @@ nav ul li a{
     color: #E1D5CB;
 }
 nav ul li a img{
-    width: 1.5em;
+    width: 1.4em;
     
 }
 
@@ -206,15 +214,20 @@ nav > img:nth-of-type(4){
 
 
 main h2{
-    font-family: "indie";
+    color: #432918;
+    font-family: "cinzel";
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 
 main p{
-    font-family: "indie";
+    color: #432918;
+    font-family: "cormorant";
+    font-size: 14;
     text-align: center;
+    width: 13em;
+    align-self: center;
     
 }
 
