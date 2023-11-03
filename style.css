@@ -1,15 +1,23 @@
 body{
+    
     background: linear-gradient(#B7D0E1,#E1D5CB);
     overflow-x: hidden;
     width: 100vw;
     min-height: 100vh;
     margin:0;
+    animation: fadein 6s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
 }
     
 header{
-
+    overflow: hidden;
     position: relative;
-    margin-bottom: 4em;
+    padding-bottom: 2em;
     /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil */
 }
 
@@ -37,30 +45,72 @@ header section h1{
 header>img{
     position:absolute;
 }
+
+/* De komende 3 zijn de wolkjes */
 header >img:nth-of-type(1){
     width: 4em;
-    /* > is de direct child, zonder dat pakte hij de 1e img(logo) */
-    top:-2.8em;
+    /* > is de direct child, zonder dat pakte hij de 1e img(logo) pakt */
+    top:-1em;
     left: 5em;
+    animation: bewegendewolken1 5s infinite;
+    transition: 9s;
 }
 
 header >img:nth-of-type(2){
-    width: 8em;
-    top: -5em;
-    right: -2em;
+    width: 7em;
+    top: -1em;
+    right: -3em;
+    animation: bewegendewolken2 10s infinite;
+    transition: 4s;
 }
 
 header >img:nth-of-type(3){
-    width: 12em;
-    top:0em;
+    width: 11em;
+    top:3.3em;
     left: 6.5em;
     z-index: -1;
+    animation: bewegendewolken3 25s infinite;
+    transition: 2s;
 }
 
 header >img:nth-of-type(4){
+    width: 3em;
+    left: -2em;
+    z-index: -1;
+    animation: bewegendewolken4 15s infinite;
+    transition: 2s;
+}
+
+header >img:nth-of-type(5){
     right: 0;
     top:9em;
+    /* De 2 lijntjes */
 }
+
+@keyframes bewegendewolken1 {
+    0% { transform: translateX(0%); opacity: 1;}
+    50% { transform: translateX(30%); opacity: 0.8;}
+    100% { transform: translateX(0%); opacity: 0.5;}
+}
+
+@keyframes bewegendewolken2 {
+    0% { transform: translateX(0%); opacity: 0;}
+    50% { transform: translateX(30%); opacity: 1;}
+    100% { transform: translateX(0%); opacity: 0;}
+}
+
+@keyframes bewegendewolken3 {
+    0% { transform: translateX(5%); opacity: 0.9;}
+    50% { transform: translateX(30%); opacity: 0.7;}
+    100% { transform: translateX(5%); opacity: 0.9}
+}
+
+@keyframes bewegendewolken4 {
+    0% { transform: translateX(15%); opacity: 0;}
+    50% { transform: translateX(55%); opacity: 0.5;}
+    100% { transform: translateX(15%);opacity: 0;}
+}
+
 
 header p{
     position: absolute;
@@ -102,12 +152,38 @@ nav ul li a img{
     
 }
 
-nav > img {
+nav > img:nth-of-type(1) {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -0.6em;
     z-index: -1;
 }
+
+nav > img:nth-of-type(2){
+    z-index: -2;
+    position: absolute;
+    width: 4em;
+    bottom: -0.2em;
+    left: -1.2em;
+}
+
+nav > img:nth-of-type(3){
+    z-index: -2;
+    position: absolute;
+    width: 4em;
+    bottom: 0.8em;
+    left: 13.5em;
+}
+
+nav > img:nth-of-type(4){
+    z-index: -2;
+    position: absolute;
+    width: 4em;
+    bottom: -2em;
+    right: -0.4em;
+}
+
+
 
 main h2{
     text-align: center;
@@ -117,4 +193,6 @@ main h2{
 
 main p{
     text-align: center;
+    
 }
+
