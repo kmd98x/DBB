@@ -5,16 +5,6 @@
 }
 
 @font-face {
-    font-family: "banana";
-    src: url("fonts/banana-super/bananasuper.otf");
-}
-
-@font-face {
-    font-family: "indie";
-    src: url("fonts/indieflower/indieflower-regular.ttf");
-}
-
-@font-face {
     font-family: "cormorant";
     src: url("fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
      /* h1+p font */
@@ -211,13 +201,15 @@ nav > img:nth-of-type(4){
     right: -0.4em;
 }
 
-
-
+main{
+    margin-bottom: 2em;
+}
 main h2{
     color: #432918;
     font-family: "cinzel";
     text-align: center;
     font-size: 0.7em;
+    margin-top: 2em;
 }
 
 
@@ -226,8 +218,16 @@ main p{
     font-family: "cormorant";
     font-size: 14;
     text-align: center;
-    width: 13em;
-    align-self: center;
-    
+    width: 17em;
+    margin: auto;
+
+}
+
+main a{
+    color: #432918;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.4em;
 }
 
