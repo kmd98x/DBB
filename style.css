@@ -25,14 +25,17 @@ body{
     100% {opacity: 1;}
     
 }
-    
+
 header{
     overflow: hidden;
     position: relative;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil en dat het niet links-rechts scrollbaar is */
 }
 
+.overons header{
+    padding-bottom: 0em;
+}
 header section{
     display: flex;
     align-items: center;
@@ -56,22 +59,25 @@ header section h1{
     /* Dit heeft mijn H1 een kleur/grootte/plek */
 }
 
-header p{
+header h2{
     font-family: "cinzel";
     position: absolute;
     color: #432918;
     right: 0.8em;
-    top:6.9em;
+    top:8em;
+    font-size: 0.9em;
     /* de 'Home' kleur en plek geven */
 }
 
 
 header>img{
+    /* alle afb in de header */
     position:absolute;
 }
 
 /* De komende 3 zijn de wolkjes */
-header >img:nth-of-type(1){
+.wolk1{
+
     width: 4em;
     /* > is de direct child, zonder dat pakte hij de 1e img(logo) pakt */
     top:-1em;
@@ -79,8 +85,9 @@ header >img:nth-of-type(1){
     animation: bewegendewolken1 5s infinite;
     transition: 9s;
 }
+   
 
-header >img:nth-of-type(2){
+.wolk2{
     width: 7em;
     top: -1em;
     right: -3em;
@@ -88,7 +95,7 @@ header >img:nth-of-type(2){
     transition: 4s;
 }
 
-header >img:nth-of-type(3){
+.wolk3{
     width: 11em;
     top:3.3em;
     left: 6.5em;
@@ -97,7 +104,7 @@ header >img:nth-of-type(3){
     transition: 2s;
 }
 
-header >img:nth-of-type(4){
+.wolk4{
     width: 3em;
     left: -2em;
     z-index: -1;
@@ -105,11 +112,14 @@ header >img:nth-of-type(4){
     transition: 2s;
 }
 
-header >img:nth-of-type(5){
+.lijntjes{
     right: 0;
     top:9em;
     /* De 2 lijntjes */
+
 }
+  
+
 
 @keyframes bewegendewolken1 {
     0% { transform: translateX(0%); opacity: 1;}
@@ -206,7 +216,12 @@ nav > img:nth-of-type(4){
 main{
     margin-bottom: 2em;
 }
-main h2{
+
+.overons main{
+
+    margin-bottom: 5em;
+}
+main h3{
     color: #432918;
     font-family: "cinzel";
     text-align: center;
@@ -239,6 +254,7 @@ main a:hover{
 
 
 .map{
+    margin: 0 auto 2em;
     height: 10em;
     overflow: scroll;
     width:90vw;
@@ -246,5 +262,6 @@ main a:hover{
 }
 
 .map img{
+    width: 25em;
     display: block;
 }
