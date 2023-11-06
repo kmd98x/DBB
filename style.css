@@ -9,9 +9,12 @@
     src: url("fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
      /* h1+p font */
 }
+/* ==============================================================
+                                                             HOME 
+================================================================= */
 
 body{
-    
+    /* deze styling telt voor elke pagina */
     background: linear-gradient(#B7D0E1,#E1D5CB);
     overflow-x: hidden;
     width: 100vw;
@@ -21,32 +24,31 @@ body{
 }
 
 @keyframes fadein {
+    /* deze animatie telt ook voor elke pagina als je erop komt */
     0% {opacity: 0;}
     100% {opacity: 1;}
     
 }
 
-header{
+.home header{
     overflow: hidden;
     position: relative;
     padding-bottom: 2em;
     /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil en dat het niet links-rechts scrollbaar is */
 }
 
-.overons header{
-    padding-bottom: 0em;
-}
+
 header section{
     display: flex;
     align-items: center;
     gap: 0.8em;
     padding:0.7em 0.7em;
-    /* Zorgt ervoor dat mijn logo naast de H1 komt te staan */
+    /* Zorgt ervoor dat mijn logo naast de H1 komt te staan,dus geld ook voor alle paginas */
 }
 
 header section img{
     width: 5em;
-    /* Dit geeft mijn logo een grootte en de juiste plek */
+    /* Dit geeft mijn logo een grootte en de juiste plek, dus ook voor alle paginas */
 }
 
 header section h1{
@@ -56,7 +58,7 @@ header section h1{
     font-size: 1.2em;
     color: #432918;
     width: 5em;
-    /* Dit heeft mijn H1 een kleur/grootte/plek */
+    /* Dit heeft mijn H1 een kleur/grootte/plek, dus ook voor alle paginas */
 }
 
 header h2{
@@ -66,18 +68,24 @@ header h2{
     right: 0.8em;
     top:8em;
     font-size: 0.9em;
-    /* de 'Home' kleur en plek geven */
+    /* de 'h2's' kleur en plek geven. Ook voor alle paginas */
 }
 
 
 header>img{
+    /* bewegende wolkjes op de homepage */
     /* alle afb in de header */
     position:absolute;
 }
 
+.lijntjes{
+    right: 0;
+    top:9em;
+    /* De 2 lijntjes */
+}
+
 /* De komende 3 zijn de wolkjes */
 .wolk1{
-
     width: 4em;
     /* > is de direct child, zonder dat pakte hij de 1e img(logo) pakt */
     top:-1em;
@@ -85,7 +93,6 @@ header>img{
     animation: bewegendewolken1 5s infinite;
     transition: 9s;
 }
-   
 
 .wolk2{
     width: 7em;
@@ -111,14 +118,6 @@ header>img{
     animation: bewegendewolken4 15s infinite;
     transition: 2s;
 }
-
-.lijntjes{
-    right: 0;
-    top:9em;
-    /* De 2 lijntjes */
-
-}
-  
 
 
 @keyframes bewegendewolken1 {
@@ -150,7 +149,6 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    
 }
 
 nav ul {
@@ -159,7 +157,6 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 nav ul li{
@@ -175,9 +172,9 @@ nav ul li a{
     color: #E1D5CB;
     padding: 0 0.5em;
 }
+
 nav ul li a img{
     width: 1.4em;
-    
 }
 
 nav > img:nth-of-type(1) {
@@ -213,15 +210,8 @@ nav > img:nth-of-type(4){
     right: -0.4em;
 }
 
-main{
-    margin-bottom: 2em;
-}
-
-.overons main{
-
-    margin-bottom: 5em;
-}
 main h3{
+    /* de h3'tjes op alle paginas */
     color: #432918;
     font-family: "cinzel";
     text-align: center;
@@ -229,18 +219,17 @@ main h3{
     /* margin-top: 2em; */
 }
 
-
 main p{
+    /* de p'tjes op alle paginas */
     color: #432918;
     font-family: "cormorant";
     font-size: 14;
     text-align: center;
     width: 17em;
     margin: auto;
-
 }
 
-main a{
+.home main a{
     color: #432918;
     text-decoration: none;
     text-align: center;
@@ -248,10 +237,22 @@ main a{
     padding: 0.4em;
 }
 
-main a:hover{
+.home main a:hover{
     text-decoration: underline;
 }
 
+.home main{
+    margin-bottom: 2em;
+     /* toegevoegd zodat de nav balk er goed uit ziet als je naar beneden scrollt */
+}
+
+/* ==============================================================
+                                                        OVER ONS 
+================================================================= */
+
+.overons main{
+    margin-bottom: 5em;
+}
 
 .map{
     margin: 0 auto 2em;
@@ -264,4 +265,30 @@ main a:hover{
 .map img{
     width: 25em;
     display: block;
+}
+
+.overons header{
+    padding-bottom: 0em;
+}
+
+
+/* ==============================================================
+                                                      COMPOSTEREN 
+================================================================= */
+
+.composteren main p{
+    width: 17em;
+}
+
+
+.recycleanimatie{
+    /* dit houdt de afb bij elkaar in de div */
+    position: relative;
+    margin: auto;
+    width: 9em;
+}
+
+.recycleanimatie img{
+    position: absolute;
+    
 }
