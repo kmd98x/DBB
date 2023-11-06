@@ -29,8 +29,8 @@ body{
 header{
     overflow: hidden;
     position: relative;
-    padding-bottom: 2em;
-    /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil */
+    padding-bottom: 1em;
+    /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil en dat het niet links-rechts scrollbaar is */
 }
 
 header section{
@@ -147,10 +147,9 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1em;
     align-items: center;
     justify-content: center;
-    gap:1.3em;
+    
 }
 
 nav ul li{
@@ -164,6 +163,7 @@ nav ul li a{
     gap: .2em;
     text-decoration: none;
     color: #E1D5CB;
+    padding: 0 0.5em;
 }
 nav ul li a img{
     width: 1.4em;
@@ -175,6 +175,8 @@ nav > img:nth-of-type(1) {
     width: 100%;
     bottom: -0.6em;
     z-index: -1;
+    pointer-events: none;
+    /* dit zorgt ervoor dat de afb niet klikbaar is */
 }
 
 nav > img:nth-of-type(2){
@@ -209,7 +211,7 @@ main h2{
     font-family: "cinzel";
     text-align: center;
     font-size: 0.7em;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 
@@ -231,3 +233,18 @@ main a{
     padding: 0.4em;
 }
 
+main a:hover{
+    text-decoration: underline;
+}
+
+
+.map{
+    height: 10em;
+    overflow: scroll;
+    width:90vw;
+    border: #432918 .05em solid;
+}
+
+.map img{
+    display: block;
+}
