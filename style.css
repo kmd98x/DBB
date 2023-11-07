@@ -37,10 +37,9 @@ body {
 
 }
 
-.home header {
+header {
     overflow: hidden;
     position: relative;
-    padding-bottom: 2em;
     /* Dit zorgt ervoor dat ik de wolken kan plaatsen waar ik wil en dat het niet links-rechts scrollbaar is */
 }
 
@@ -97,7 +96,7 @@ header>img {
     /* > is de direct child, zonder dat pakte hij de 1e img(logo) pakt */
     top: -1em;
     left: 5em;
-    animation: bewegendewolken1 5s infinite;
+    animation: bewegendewolken1 6s infinite;
     transition: 9s;
 }
 
@@ -119,6 +118,7 @@ header>img {
 }
 
 .wolk4 {
+    top: 8.15em;
     width: 3em;
     left: -2em;
     z-index: -1;
@@ -130,7 +130,7 @@ header>img {
 @keyframes bewegendewolken1 {
     0% {
         transform: translateX(0%);
-        opacity: 1;
+        opacity: 0.6;
     }
 
     50% {
@@ -320,10 +320,6 @@ main p {
 
 }
 
-.overons header {
-    padding-bottom: 0em;
-}
-
 .overons main ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -344,12 +340,16 @@ main p {
                                                       COMPOSTEREN 
 ================================================================= */
 
-.composteren main {
-    margin-bottom: 9em;
+.composteren main section:nth-of-type(1)  {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
 }
 
-.composteren main p {
-    width: 17em;
+
+.composteren main {
+    margin-bottom: 8em;
 }
 
 .recycleanimatie {
@@ -357,7 +357,7 @@ main p {
     position: relative;
     padding-top: 1em;
     margin: auto;
-    width: 9em;
+    width: 7em;
     height: 9em;
 }
 
@@ -366,10 +366,10 @@ main p {
 }
 
 .composteren main section a {
-    margin: 1em auto ;
+    margin: 1em auto;
     width: 5em;
     text-align: center;
-    display:block;
+    display: block;
     color: #432918;
     text-decoration: none;
     border: solid 0.08em #432918;
@@ -383,5 +383,5 @@ main p {
     border: solid 0.07em #4329189c;
     box-shadow: 0em 0em 1em #43291877;
     background-color: #4329181b;
-    transform:scale(1.02);
+    transform: scale(1.02);
 }
