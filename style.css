@@ -331,6 +331,7 @@ main p {
 
 .overons main ul li p {
     text-align: left;
+    text-decoration: none;
 }
 
 
@@ -355,7 +356,6 @@ main p {
     gap: 0.5em;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2em;
-    
 }
 
 
@@ -374,8 +374,49 @@ main p {
 
 .recycleanimatie img {
     position: absolute;
-    
+    animation: recycleanimatie 3s;
+    animation-fill-mode: backwards;
 }
+
+.recycleanimatie img:nth-of-type(1){
+    animation-delay: 0.5s;
+}
+
+.recycleanimatie img:nth-of-type(2){
+    animation-delay: 1s;
+}
+
+.recycleanimatie img:nth-of-type(3){
+    animation-delay: 1.5s;
+}
+
+
+.recycleanimatie img:nth-of-type(4){
+    animation-delay: 2s;
+}
+
+
+.recycleanimatie img:nth-of-type(5){
+    animation-delay: 2.5s;
+}
+
+
+.recycleanimatie img:nth-of-type(6){
+    animation-delay: 3s;
+}
+
+@keyframes recycleanimatie {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+}
+
 
 .composteren main section a {
     margin: 1em auto;
