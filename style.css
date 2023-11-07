@@ -251,7 +251,7 @@ main p{
 ================================================================= */
 
 .overons main{
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 }
 
 .map{
@@ -260,16 +260,33 @@ main p{
     overflow: scroll;
     width:90vw;
     border: #432918 .05em solid;
+    border-radius: 1.5em;
 }
 
 .map img{
     width: 25em;
     display: block;
+   
 }
 
 .overons header{
     padding-bottom: 0em;
 }
+
+.overons main ul li {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    align-items: center;
+    margin: 0.6em;
+    gap:0.9em;
+    padding-left: 4em;
+}
+
+.overons main ul li p{
+    text-align: left;
+}
+
 
 
 /* ==============================================================
