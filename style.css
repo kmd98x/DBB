@@ -327,7 +327,6 @@ main p {
     align-items: center;
     margin: 0.6em;
     gap: 0.9em;
-    padding-left: 4em;
 }
 
 .overons main ul li p {
@@ -340,11 +339,23 @@ main p {
                                                       COMPOSTEREN 
 ================================================================= */
 
-.composteren main section:nth-of-type(1)  {
+.composteren main div p{
+    width: 14em;
+    text-align: left;
+    padding-right: 0.7em;
+    
+}
+
+.composteren main div h3{
+    text-align: left;
+}
+.composteren main > div {
     display: grid;
-    gap: 2em;
+    align-items: center;
+    gap: 0.5em;
     grid-template-columns: repeat(2, 1fr);
-    /* align-items: center; */
+    margin-bottom: 2em;
+    
 }
 
 
@@ -355,14 +366,15 @@ main p {
 .recycleanimatie {
     /* dit houdt de afb bij elkaar in de div */
     position: relative;
-    padding-top: 1em;
     margin: auto;
-    width: 7em;
+    width: 8em;
     height: 9em;
+    margin-top: 3.5em;
 }
 
 .recycleanimatie img {
     position: absolute;
+    
 }
 
 .composteren main section a {
