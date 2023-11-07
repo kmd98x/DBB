@@ -1,36 +1,43 @@
-@font-face { 
+@font-face {
     font-family: "cinzel";
     src: url("fonts/cinzel/cinzel-regular.ttf");
-   
+
 }
 
 @font-face {
     font-family: "cormorant";
     src: url("fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
-     /* h1+p font */
+    /* h1+p font */
 }
+
 /* ==============================================================
                                                              HOME 
 ================================================================= */
 
-body{
+body {
     /* deze styling telt voor elke pagina */
-    background: linear-gradient(#B7D0E1,#E1D5CB);
+    background: linear-gradient(#B7D0E1, #E1D5CB);
     overflow-x: hidden;
     width: 100vw;
     min-height: 100vh;
-    margin:0;
+    margin: 0;
     animation: fadein 6s;
 }
 
 @keyframes fadein {
+
     /* deze animatie telt ook voor elke pagina als je erop komt */
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
-.home header{
+.home header {
     overflow: hidden;
     position: relative;
     padding-bottom: 2em;
@@ -38,20 +45,20 @@ body{
 }
 
 
-header section{
+header section {
     display: flex;
     align-items: center;
     gap: 0.8em;
-    padding:0.7em 0.7em;
+    padding: 0.7em 0.7em;
     /* Zorgt ervoor dat mijn logo naast de H1 komt te staan,dus geld ook voor alle paginas */
 }
 
-header section img{
+header section img {
     width: 5em;
     /* Dit geeft mijn logo een grootte en de juiste plek, dus ook voor alle paginas */
 }
 
-header section h1{
+header section h1 {
 
     font-family: "cormorant";
     margin-top: 2.5em;
@@ -61,40 +68,40 @@ header section h1{
     /* Dit heeft mijn H1 een kleur/grootte/plek, dus ook voor alle paginas */
 }
 
-header h2{
+header h2 {
     font-family: "cinzel";
     position: absolute;
     color: #432918;
     right: 0.8em;
-    top:8em;
+    top: 8em;
     font-size: 0.9em;
     /* de 'h2's' kleur en plek geven. Ook voor alle paginas */
 }
 
 
-header>img{
+header>img {
     /* bewegende wolkjes op de homepage */
     /* alle afb in de header */
-    position:absolute;
+    position: absolute;
 }
 
-.lijntjes{
+.lijntjes {
     right: 0;
-    top:9em;
+    top: 9em;
     /* De 2 lijntjes */
 }
 
 /* De komende 3 zijn de wolkjes */
-.wolk1{
+.wolk1 {
     width: 4em;
     /* > is de direct child, zonder dat pakte hij de 1e img(logo) pakt */
-    top:-1em;
+    top: -1em;
     left: 5em;
     animation: bewegendewolken1 5s infinite;
     transition: 9s;
 }
 
-.wolk2{
+.wolk2 {
     width: 7em;
     top: -1em;
     right: -3em;
@@ -102,16 +109,16 @@ header>img{
     transition: 4s;
 }
 
-.wolk3{
+.wolk3 {
     width: 11em;
-    top:3.3em;
+    top: 3.3em;
     left: 6.5em;
     z-index: -1;
     animation: bewegendewolken3 25s infinite;
     transition: 2s;
 }
 
-.wolk4{
+.wolk4 {
     width: 3em;
     left: -2em;
     z-index: -1;
@@ -121,27 +128,71 @@ header>img{
 
 
 @keyframes bewegendewolken1 {
-    0% { transform: translateX(0%); opacity: 1;}
-    50% { transform: translateX(30%); opacity: 0.8;}
-    100% { transform: translateX(0%); opacity: 0.5;}
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(30%);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 0.5;
+    }
 }
 
 @keyframes bewegendewolken2 {
-    0% { transform: translateX(0%); opacity: 0;}
-    50% { transform: translateX(30%); opacity: 1;}
-    100% { transform: translateX(0%); opacity: 0;}
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(30%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
 }
 
 @keyframes bewegendewolken3 {
-    0% { transform: translateX(5%); opacity: 0.9;}
-    50% { transform: translateX(30%); opacity: 0.7;}
-    100% { transform: translateX(5%); opacity: 0.9}
+    0% {
+        transform: translateX(5%);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateX(30%);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 0.9
+    }
 }
 
 @keyframes bewegendewolken4 {
-    0% { transform: translateX(15%); opacity: 0.5;}
-    50% { transform: translateX(55%); opacity: 0.2;}
-    100% { transform: translateX(15%);opacity: 0.5;}
+    0% {
+        transform: translateX(15%);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(55%);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(15%);
+        opacity: 0.5;
+    }
 }
 
 
@@ -159,11 +210,11 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -173,11 +224,11 @@ nav ul li a{
     padding: 0 0.5em;
 }
 
-nav ul li a img{
+nav ul li a img {
     width: 1.4em;
 }
 
-nav > img:nth-of-type(1) {
+nav>img:nth-of-type(1) {
     position: absolute;
     width: 100%;
     bottom: -0.6em;
@@ -186,7 +237,7 @@ nav > img:nth-of-type(1) {
     /* dit zorgt ervoor dat de afb niet klikbaar is */
 }
 
-nav > img:nth-of-type(2){
+nav>img:nth-of-type(2) {
     z-index: -2;
     position: absolute;
     width: 4em;
@@ -194,7 +245,7 @@ nav > img:nth-of-type(2){
     left: -1.2em;
 }
 
-nav > img:nth-of-type(3){
+nav>img:nth-of-type(3) {
     z-index: -2;
     position: absolute;
     width: 4em;
@@ -202,7 +253,7 @@ nav > img:nth-of-type(3){
     left: 13.5em;
 }
 
-nav > img:nth-of-type(4){
+nav>img:nth-of-type(4) {
     z-index: -2;
     position: absolute;
     width: 4em;
@@ -210,7 +261,7 @@ nav > img:nth-of-type(4){
     right: -0.4em;
 }
 
-main h3{
+main h3 {
     /* de h3'tjes op alle paginas */
     color: #432918;
     font-family: "cinzel";
@@ -219,7 +270,7 @@ main h3{
     /* margin-top: 2em; */
 }
 
-main p{
+main p {
     /* de p'tjes op alle paginas */
     color: #432918;
     font-family: "cormorant";
@@ -229,7 +280,7 @@ main p{
     margin: auto;
 }
 
-.home main a{
+.home main a {
     color: #432918;
     text-decoration: none;
     text-align: center;
@@ -237,53 +288,53 @@ main p{
     padding: 0.4em;
 }
 
-.home main a:hover{
+.home main a:hover {
     text-decoration: underline;
 }
 
-.home main{
+.home main {
     margin-bottom: 2em;
-     /* toegevoegd zodat de nav balk er goed uit ziet als je naar beneden scrollt */
+    /* toegevoegd zodat de nav balk er goed uit ziet als je naar beneden scrollt */
 }
 
 /* ==============================================================
                                                         OVER ONS 
 ================================================================= */
 
-.overons main{
+.overons main {
     margin-bottom: 8em;
 }
 
-.map{
+.map {
     margin: 0 auto 2em;
     height: 10em;
     overflow: scroll;
-    width:90vw;
+    width: 90vw;
     border: #432918 .05em solid;
     border-radius: 1.5em;
 }
 
-.map img{
+.map img {
     width: 25em;
     display: block;
-   
+
 }
 
-.overons header{
+.overons header {
     padding-bottom: 0em;
 }
 
 .overons main ul li {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
     align-items: center;
     margin: 0.6em;
-    gap:0.9em;
+    gap: 0.9em;
     padding-left: 4em;
 }
 
-.overons main ul li p{
+.overons main ul li p {
     text-align: left;
 }
 
@@ -293,19 +344,44 @@ main p{
                                                       COMPOSTEREN 
 ================================================================= */
 
-.composteren main p{
+.composteren main {
+    margin-bottom: 9em;
+}
+
+.composteren main p {
     width: 17em;
 }
 
-
-.recycleanimatie{
+.recycleanimatie {
     /* dit houdt de afb bij elkaar in de div */
     position: relative;
+    padding-top: 1em;
     margin: auto;
     width: 9em;
+    height: 9em;
 }
 
-.recycleanimatie img{
+.recycleanimatie img {
     position: absolute;
-    
+}
+
+.composteren main section a {
+    margin: 1em auto ;
+    width: 5em;
+    text-align: center;
+    display:block;
+    color: #432918;
+    text-decoration: none;
+    border: solid 0.08em #432918;
+    border-radius: 1.5em;
+    padding: 0.5em .8em;
+    transition: 0.4s;
+}
+
+.composteren main section a:hover {
+    text-shadow: 0em 0em 1em #eaeaea;
+    border: solid 0.07em #4329189c;
+    box-shadow: 0em 0em 1em #43291877;
+    background-color: #4329181b;
+    transform:scale(1.02);
 }
