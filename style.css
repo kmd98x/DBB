@@ -24,6 +24,7 @@ body {
     animation: fadein 6s;
 }
 
+
 @keyframes fadein {
 
     /* deze animatie telt ook voor elke pagina als je erop komt */
@@ -340,17 +341,18 @@ main p {
                                                       COMPOSTEREN 
 ================================================================= */
 
-.composteren main div p{
+.composteren main div p {
     width: 14em;
     text-align: left;
     padding-right: 0.7em;
-    
+
 }
 
-.composteren main div h3{
+.composteren main div h3 {
     text-align: left;
 }
-.composteren main > div {
+
+.composteren main>div {
     display: grid;
     align-items: center;
     gap: 0.5em;
@@ -378,30 +380,30 @@ main p {
     animation-fill-mode: backwards;
 }
 
-.recycleanimatie img:nth-of-type(1){
+.recycleanimatie img:nth-of-type(1) {
     animation-delay: 0.5s;
 }
 
-.recycleanimatie img:nth-of-type(2){
+.recycleanimatie img:nth-of-type(2) {
     animation-delay: 1s;
 }
 
-.recycleanimatie img:nth-of-type(3){
+.recycleanimatie img:nth-of-type(3) {
     animation-delay: 1.5s;
 }
 
 
-.recycleanimatie img:nth-of-type(4){
+.recycleanimatie img:nth-of-type(4) {
     animation-delay: 2s;
 }
 
 
-.recycleanimatie img:nth-of-type(5){
+.recycleanimatie img:nth-of-type(5) {
     animation-delay: 2.5s;
 }
 
 
-.recycleanimatie img:nth-of-type(6){
+.recycleanimatie img:nth-of-type(6) {
     animation-delay: 3s;
 }
 
@@ -413,7 +415,7 @@ main p {
 
     100% {
         opacity: 1;
-        
+
     }
 }
 
@@ -438,3 +440,65 @@ main p {
     background-color: #4329181b;
     transform: scale(1.02);
 }
+
+
+
+/* ==============================================================
+                                                      RESERVEREN 
+================================================================= */
+
+.reserveren main {
+    margin-bottom: 4em;
+}
+
+form {
+    font-family: "cormorant";
+    color: #432918;
+    padding: 0 4em;
+}
+
+form img {
+    width: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .05em;
+}
+
+.selectfields {
+    margin: 1em 0 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.selectfields div {
+    padding: 0.6em;
+    position: relative;
+    border-radius: 1.5em;
+    border: 0.1em solid #432918;
+    
+}
+
+input {
+    margin: 0.4em 0 1em;
+    display: block;
+    padding: 0.5em;
+    border: 0.1em solid #432918;
+    background: none;
+    border-radius: 1.5em;
+    width: 100%;
+
+}
+
+select {
+    border: none;
+    padding: .5em;
+    margin: auto;
+    color: #432918;
+    font-family: "cormorant";
+    -webkit-appearance: none;
+    background: none;
+    /* https://stackoverflow.com/questions/23040305/how-to-apply-css-to-a-mac-chrome-select-box */
+}
+
+button {}
