@@ -429,7 +429,7 @@ main p {
     text-decoration: none;
     border: solid 0.08em #432918;
     border-radius: 1.5em;
-    padding: 0.5em .8em;
+    padding: 0.2em .8em;
     transition: 0.4s;
 }
 
@@ -458,7 +458,7 @@ form {
 }
 
 form img {
-    width: 0.8em;
+    width: 0.7em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -472,24 +472,35 @@ form img {
 }
 
 .selectfields div {
-    padding: 0.6em;
+    font-family: "cormorant";
+    padding: 0.4em;
     position: relative;
     border-radius: 1.5em;
-    border: 0.1em solid #432918;
-    
+    border: 0.05em solid #432918;
 }
 
+.selectfields div:hover{
+    text-shadow: 0em 0em 1em #eaeaea;
+    border: solid 0.07em #4329189c;
+    box-shadow: 0em 0em 1em #43291877;
+    transform: scale(1.001);
+}
 input {
+    font-family: "cormorant";
     margin: 0.4em 0 1em;
     display: block;
     padding: 0.5em;
-    border: 0.1em solid #432918;
+    border: 0.05em solid #432918;
     background: none;
     border-radius: 1.5em;
     width: 100%;
-
 }
-
+input:hover{
+    text-shadow: 0em 0em 1em #eaeaea;
+    border: solid 0.07em #4329189c;
+    box-shadow: 0em 0em 1em #43291877;
+    transform: scale(1.02);
+}
 select {
     border: none;
     padding: .5em;
@@ -501,4 +512,27 @@ select {
     /* https://stackoverflow.com/questions/23040305/how-to-apply-css-to-a-mac-chrome-select-box */
 }
 
-button {}
+
+button {
+    font-family: "cormorant";
+    font-size: 1em;
+    margin: 1em auto;
+    width: 6em;
+    text-align: center;
+    display: block;
+    color: #432918;
+    background: none;
+    text-decoration: none;
+    border: solid 0.08em #432918;
+    border-radius: 1.5em;
+    padding: 0.2em .9em;
+    transition: 0.4s;
+}
+
+button:hover{
+    text-shadow: 0em 0em 1em #eaeaea;
+    border: solid 0.07em #4329189c;
+    box-shadow: 0em 0em 1em #43291877;
+    background-color: #4329181b;
+    transform: scale(1.02);
+}
