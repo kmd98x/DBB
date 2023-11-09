@@ -294,7 +294,7 @@ main p {
 }
 
 .home main {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     /* toegevoegd zodat de nav balk er goed uit ziet als je naar beneden scrollt */
 }
 
@@ -307,7 +307,8 @@ main p {
 }
 
 .map {
-    margin: 0 auto 2em;
+    
+    margin: 1em auto 2em;
     height: 10em;
     overflow: scroll;
     width: 90vw;
@@ -318,8 +319,8 @@ main p {
 .map img {
     width: 25em;
     display: block;
-
 }
+
 
 .overons main ul li {
     display: grid;
@@ -448,7 +449,7 @@ main p {
 ================================================================= */
 
 .reserveren main {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 form {
