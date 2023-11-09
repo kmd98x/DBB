@@ -270,7 +270,7 @@ main p {
     /* de p'tjes op alle paginas */
     color: #432918;
     font-family: "cormorant";
-    font-size: 15;
+    font-size: 1.04em;
     text-align: center;
     width: 17em;
     margin: auto;
@@ -514,7 +514,7 @@ select {
     margin: auto;
     color: #432918;
     font-family: "cormorant";
-    -webkit-appearance: none;
+    appearance: none;
     background: none;
     /* https://stackoverflow.com/questions/23040305/how-to-apply-css-to-a-mac-chrome-select-box */
 }
