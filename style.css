@@ -441,13 +441,13 @@ main p {
 ================================================================= */
 
 .reserveren main {
-    margin-bottom: 3em;
+    margin-bottom: 8em;
 }
 
 form {
     font-family: "cormorant";
     color: #432918;
-    padding: 0 4em;
+    padding: 0 3em;
 }
 
 form img {
@@ -462,7 +462,8 @@ form img {
 
 .selectfields {
     margin: 1em 0 1em;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 1em;
 }
 
@@ -489,7 +490,7 @@ input {
     border: 0.05em solid #432918;
     background: none;
     border-radius: 1.5em;
-    width: 100%;
+    width: 95.2%;
     font-size: 0.9em;
     color: #432918;
 }
@@ -507,7 +508,7 @@ input:hover{
 
 select {
     font-size: 0.9em;
-    width: 8em;
+    width: 100%;
     border: none;
     padding: .5em;
     margin: auto;
