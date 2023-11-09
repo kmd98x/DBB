@@ -291,6 +291,7 @@ main p {
 .home main {
     margin-bottom: 4em;
     /* toegevoegd zodat de nav balk er goed uit ziet als je naar beneden scrollt */
+    /* Bij de homepage op mijn laptop, staat er genoeg ruimte tussen de 'lees meer' en mijn nav balk, maar op een iphone 6 is het niet zo goed scrollbaar naar beneden. Ik weet niet op wat u het precies bekijkt, maar voor een laptop is de 4em prima, maar voor een telefoon zou ik dan 6em kiezen.  */
 }
 
 /* ==============================================================
