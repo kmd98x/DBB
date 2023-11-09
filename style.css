@@ -1,7 +1,6 @@
 @font-face {
     font-family: "cinzel";
     src: url("fonts/cinzel/cinzel-regular.ttf");
-
 }
 
 @font-face {
@@ -35,7 +34,6 @@ body {
     100% {
         opacity: 1;
     }
-
 }
 
 header {
@@ -59,7 +57,6 @@ header section img {
 }
 
 header section h1 {
-
     font-family: "cormorant";
     margin-top: 2.5em;
     font-size: 1.2em;
@@ -126,7 +123,6 @@ header>img {
     animation: bewegendewolken4 15s infinite;
     transition: 2s;
 }
-
 
 @keyframes bewegendewolken1 {
     0% {
@@ -195,7 +191,6 @@ header>img {
         opacity: 0.5;
     }
 }
-
 
 nav {
     position: fixed;
@@ -307,7 +302,6 @@ main p {
 }
 
 .map {
-    
     margin: 1em auto 2em;
     height: 10em;
     overflow: scroll;
@@ -443,7 +437,6 @@ main p {
 }
 
 
-
 /* ==============================================================
                                                       RESERVEREN 
 ================================================================= */
@@ -486,6 +479,7 @@ form img {
     box-shadow: 0em 0em 1em #43291877;
     transform: scale(1.001);
 }
+
 input {
     font-family: "cormorant";
     margin: 0.4em 0 1em;
@@ -496,12 +490,14 @@ input {
     border-radius: 1.5em;
     width: 100%;
 }
+
 input:hover{
     text-shadow: 0em 0em 1em #eaeaea;
     border: solid 0.07em #4329189c;
     box-shadow: 0em 0em 1em #43291877;
     transform: scale(1.02);
 }
+
 select {
     border: none;
     padding: .5em;
@@ -512,7 +508,6 @@ select {
     background: none;
     /* https://stackoverflow.com/questions/23040305/how-to-apply-css-to-a-mac-chrome-select-box */
 }
-
 
 button {
     font-family: "cormorant";
